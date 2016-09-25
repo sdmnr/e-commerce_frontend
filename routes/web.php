@@ -34,22 +34,22 @@ Route::get('/detail', function () {
 
 Route::any('/customer-wishlist', function () {
     $pagetype="customer-wishlist";
-    return view('pages.customer-wishlist')->with(['pagetype'=>$pagetype]);
+    return view('pages.customer_wishlist')->with(['pagetype'=>$pagetype]);
 });
 
 Route::any('/customer-orders', function () {
     $pagetype="customer-orders";
-    return view('pages.customer-orders')->with(['pagetype'=>$pagetype]);
+    return view('pages.customer_orders')->with(['pagetype'=>$pagetype]);
 });
 
 Route::any('/customer-order', function () {
     $pagetype="customer-order";
-    return view('pages.customer-order')->with(['pagetype'=>$pagetype]);
+    return view('pages.customer_order')->with(['pagetype'=>$pagetype]);
 });
 
 Route::any('/customer-account', function () {
     $pagetype="customer-account";
-    return view('pages.customer-account')->with(['pagetype'=>$pagetype]);
+    return view('pages.customer_account')->with(['pagetype'=>$pagetype]);
 });
 
 Route::any('/contact', function () {
